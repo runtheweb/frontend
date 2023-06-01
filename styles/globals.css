@@ -1,0 +1,50 @@
+/* @import '~rsuite/dist/styles/rsuite-dark.css'; */
+@import '~rsuite/dist/rsuite.min.css';
+
+@font-face {
+  font-family: "Monaco";
+  src: url("/font/monaco.eot");
+  src: url("/font/monaco.woff2") format("woff2"), url("/font/monaco.woff") format("woff"), url("/font/monaco.svg") format("svg");
+}
+
+@font-face {
+  font-family: "custom";
+  src: url("/font/custom.ttf");
+}
+
+@font-face {
+  font-family: "another-danger";
+  src: url("/font/another-danger.otf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: Monaco, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  background-color: #010015
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #010015;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: linear-gradient(transparent, #DDFF2A);
+  border-radius: 5px;
+}
+
+/* Disable vertical arrows for input numbers */
+.rs-input-number-btn-group-vertical {
+  display: none;
+}
